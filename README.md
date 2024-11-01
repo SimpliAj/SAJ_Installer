@@ -1,6 +1,6 @@
 # SAJ_Installer
 
-This Batch script provides a user-friendly menu interface to install multiple programs on Windows. You can select individual programs or choose to install all at once. The script utilizes [Chocolatey](https://chocolatey.org) as the package manager to install the programs.
+This Batch script provides a user-friendly menu interface to install multiple programs on Windows. You can select individual programs or choose to install all at once. The script directly downloads and runs installers from official sources, eliminating the need for a package manager like Chocolatey.
 
 ## Features
 
@@ -23,7 +23,7 @@ This Batch script provides a user-friendly menu interface to install multiple pr
 
 ## Requirements
 
-- **Chocolatey**: This script requires Chocolatey to be installed on your system. If you haven't installed Chocolatey, follow the [installation instructions here](https://chocolatey.org/install).
+- No external package manager required. The script handles downloads and installations directly.
 
 ## Installation
 
@@ -43,13 +43,12 @@ This Batch script provides a user-friendly menu interface to install multiple pr
    - **Exit**: Press `Q` to quit without installing.
 
 2. **Installation Process**:
-   - The script will install each selected program using Chocolatey. Installation status for each program will be displayed in the console.
-
+   - The script will download and install each selected program. Installation status for each program will be displayed in the console.
 
 ## Notes
 
 - Make sure to run the script with administrator privileges to allow program installations.
-- This script will automatically confirm all Chocolatey installation prompts.
+- Some installers may require additional arguments for silent installation. Please ensure to check each program's installation requirements.
 
 ## License
 
